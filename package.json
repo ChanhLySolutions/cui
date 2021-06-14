@@ -2,6 +2,9 @@
   "name": "cui",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=14.0"
+  },
   "scripts": {
     "ci": "rm -rf node_modules && yarn install --frozen-lockfile",
     "test": "jest",
