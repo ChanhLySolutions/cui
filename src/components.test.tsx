@@ -8,9 +8,7 @@ const getDirectories = (srcPath: string) => {
 };
 
 const getFiles = (srcPath: string) => {
-  return fs
-    .readdirSync(srcPath)
-    .filter((file) => fs.statSync(path.join(srcPath, file)).isFile());
+  return fs.readdirSync(srcPath).filter((file) => fs.statSync(path.join(srcPath, file)).isFile());
 };
 
 const fileExists = (_path: fs.PathLike) =>
@@ -23,9 +21,7 @@ const componentRegularExpression = /^[A-Z]((?!\.test)(?!\.stories)\w)*.tsx$/;
 const directories = getDirectories(__dirname);
 directories.forEach((directory) => {
   const files = getFiles(`${__dirname}/${directory}`);
-  const components = files.filter(
-    (file) => !!file.match(componentRegularExpression)
-  );
+  const components = files.filter((file) => !!file.match(componentRegularExpression));
   describe('all components have test', () => {
     it(`${directory} has only components`, async () => {
       const nonComponentFile = files.find(
