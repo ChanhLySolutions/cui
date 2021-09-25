@@ -18,7 +18,8 @@
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
     "test:watch": "jest --watch --json --outputFile=.jest-test-results.json",
     "test": "jest",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "chromatic": "npx chromatic"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
