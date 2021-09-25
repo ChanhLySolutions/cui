@@ -38,4 +38,4 @@ local
 # storybook
 storybook-static
 
-lib
+dist

@@ -6,9 +6,9 @@
   "author": "Chanh Ly <chanhly.vn@gmail.com>",
   "license": "GPL-2.0",
   "private": false,
-  "main": "lib/index.js",
-  "module": "lib/index.esm.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "watch": "rollup -c --watch",
     "build": "rollup -c",
@@ -33,10 +33,11 @@
     "@storybook/react": "^6.4.0-alpha.33",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.0",
+    "@types/node": "^16.10.1",
     "@types/react": "^17.0.21",
     "@types/react-test-renderer": "^17.0.1",
     "babel-loader": "^8.2.2",
-    "chromatic": "^5.10.0",
+    "chromatic": "^5.10.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^14.0.0",
@@ -64,6 +65,5 @@
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  },
-  "dependencies": {}
+  }
 }
