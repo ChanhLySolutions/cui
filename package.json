@@ -2,11 +2,14 @@
   "name": "@chanhly/cui",
   "version": "0.0.1",
   "description": "Chanh Ly Solutions UI Library",
-  "repository": "https://github.com/ChanhLySolutions/cui.git",
+  "repository": "git://github.com/ChanhLySolutions/cui.git",
   "author": "Chanh Ly <chanhly.vn@gmail.com>",
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "license": "GPL-2.0",
   "private": false,
   "main": "dist/index.js",
