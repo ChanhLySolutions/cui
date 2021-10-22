@@ -17,7 +17,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "ci": "rm -rf node_modules && yarn install --frozen-lockfile",
-    "np": "npx np",
+    "np": "npx np --no-publish",
     "prepublish": "yarn build",
     "watch": "rollup -c --watch",
     "build": "rm -rf dist && rollup -c && rm -rf dist/**/*.stories.*",
