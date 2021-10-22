@@ -4,6 +4,9 @@
   "description": "Chanh Ly Solutions UI Library",
   "repository": "https://github.com/ChanhLySolutions/cui.git",
   "author": "Chanh Ly <chanhly.vn@gmail.com>",
+  "files": [
+    "dist"
+  ],
   "license": "GPL-2.0",
   "private": false,
   "main": "dist/index.js",
@@ -11,8 +14,10 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "ci": "rm -rf node_modules && yarn install --frozen-lockfile",
+    "np": "npx np",
+    "prepublish": "yarn build",
     "watch": "rollup -c --watch",
-    "build": "rollup -c",
+    "build": "rm -rf dist && rollup -c && rm -rf dist/**/*.stories.*",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",

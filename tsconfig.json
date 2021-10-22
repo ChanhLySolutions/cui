@@ -28,13 +28,17 @@
     // Remove comment after tsconfig-paths-webpack-plugin support webpack 5
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["src/components/*"]
+      "@/components/*": ["src/components/*"],
+      "@/images/*": ["images/*"]
     },
     "types": ["jest", "node"],
     "jsx": "react",
     "noEmit": true,
+    "declarationMap": true,
+    "declarationDir": "dist",
+    "incremental": true,
     "isolatedModules": true
   },
-  "exclude": ["./out/**/*", "./node_modules/**/*"],
+  "exclude": ["./node_modules/**/*"],
   "include": ["**/*.ts", "**/*.tsx"]
 }

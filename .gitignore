@@ -39,5 +39,4 @@ local
 storybook-static
 build-storybook.log
 
-dist
 .tsbuildinfo
