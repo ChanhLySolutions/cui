@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <button
-  className="border-2 size-md dark: text-white rounded "
+  className="size-md border-2 dark: text-white rounded "
 >
   Button
 </button>
