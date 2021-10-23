@@ -10,7 +10,7 @@ export interface ButtonProps {
 }
 
 export const Button: React.FC<ButtonProps> = (props) => {
-  const { type, size, border = true, ...rest } = props;
+  const { type, size = 'md', border = true, ...rest } = props;
   const className =
     props.className ||
     classNames(
@@ -24,7 +24,6 @@ export const Button: React.FC<ButtonProps> = (props) => {
         'text-white': type === 'primary',
         'border-2': border,
       },
-      !size && 'size-md',
       !type && 'dark: text-white',
       'rounded'
     );
