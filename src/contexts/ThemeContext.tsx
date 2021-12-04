@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 
 export interface Theme {
-  size: 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge';
+  size: Size;
 }
+
+export type Size = 'small' | 'medium' | 'large' | 'xlarge' | 'xxlarge';
 
 const defaultTheme: Theme = {
   size: 'medium',

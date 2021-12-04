@@ -19,7 +19,14 @@ module.exports = {
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': [
       'babel-jest',
-      { presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-flow'] },
+      {
+        presets: [
+          '@babel/preset-env',
+          // '@babel/preset-typescript',
+          '@babel/preset-react',
+          '@babel/preset-flow',
+        ],
+      },
     ],
   },
   transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],

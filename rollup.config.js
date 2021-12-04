@@ -32,6 +32,6 @@ export default {
   watch: {
     include: 'src/**',
     input: 'src/index.ts',
-    exclude: ['node_modules/**', 'src/**/*.stories.tsx'],
+    exclude: ['node_modules/**', 'src/**/*.stories.tsx', 'src/**/*.test.tsx'],
   },
 };

@@ -20,6 +20,9 @@ const fileExists = (_path: fs.PathLike) =>
 const componentRegularExpression = /^[A-Z]((?!\.test)(?!\.stories)\w)*.tsx$/;
 const directories = getDirectories(__dirname);
 directories.forEach((directory) => {
+  if (directory === directory.toLowerCase()) {
+    return;
+  }
   const files = getFiles(`${__dirname}/${directory}`);
   const components = files.filter((file) => !!file.match(componentRegularExpression));
   describe('all components have test', () => {
