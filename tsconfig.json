@@ -26,13 +26,14 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     // Remove comment after tsconfig-paths-webpack-plugin support webpack 5
-    "baseUrl": ".",
     "paths": {
       "@/components/*": ["src/components/*"],
+      "@/contexts/*": ["src/contexts/*"],
       "@/images/*": ["images/*"]
     },
+    "baseUrl": ".",
     "types": ["jest", "node"],
-    "jsx": "react",
+    "jsx": "react-jsx",
     "noEmit": true,
     "declarationMap": true,
     "declarationDir": "dist",
@@ -40,5 +41,5 @@
     "isolatedModules": true
   },
   "exclude": ["./node_modules/**/*"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

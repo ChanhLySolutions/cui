@@ -1,4 +1,5 @@
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
@@ -28,6 +29,7 @@ module.exports = {
       path: require.resolve('path-browserify'),
       crypto: require.resolve('crypto-browserify'),
       stream: require.resolve('stream-browserify'),
+      '@/contexts': path.resolve(__dirname, '../src/contexts'),
     };
     return config;
   },
@@ -47,7 +49,7 @@ module.exports = {
     },
   },
   reactOptions: {
-    // fastRefresh: true,
+    fastRefresh: true,
     strictMode: true,
   },
 };

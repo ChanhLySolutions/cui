@@ -4,19 +4,19 @@
 @tailwind variants;
 
 @layer utilities {
-  .size-sm {
+  .small {
     @apply px-2 py-0.5;
   }
-  .size-md {
+  .medium {
     @apply px-4 py-1;
   }
-  .size-lg {
-    @apply px-6 py-2;
+  .large {
+    @apply px-4 py-2;
   }
-  .size-xl {
-    @apply px-8 py-3;
+  .xlarge {
+    @apply px-4 py-3;
   }
-  .size-xxl {
-    @apply px-10 py-4;
+  .xxlarge {
+    @apply px-4 py-4;
   }
 }
