@@ -2,7 +2,7 @@ import { ThemeContext } from '@/contexts/ThemeContext';
 import classNames from 'classnames';
 import { useContext } from 'react';
 import { Path, UseFormRegister } from 'react-hook-form';
-import { Label } from '../Label';
+import { Label } from './Label';
 
 export interface InputProps<IFormValues = void> {
   name?: Path<IFormValues>;
