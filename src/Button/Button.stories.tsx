@@ -37,12 +37,6 @@ export function Size(props: ButtonProps) {
       <Button size='large' {...props}>
         Large
       </Button>
-      <Button size='xlarge' {...props}>
-        Extra Large
-      </Button>
-      <Button size='xxlarge' {...props}>
-        Extra Extra Large
-      </Button>
     </div>
   );
 }
