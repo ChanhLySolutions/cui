@@ -86,6 +86,7 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
-    "react-hook-form": "^7.20.5"
+    "react-hook-form": "^7.20.5",
+    "ts-jest": "^27.1.1"
   }
 }

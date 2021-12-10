@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<input
+  className="border px-2 py-1"
+  required={true}
+  type="text"
+/>
+`;
